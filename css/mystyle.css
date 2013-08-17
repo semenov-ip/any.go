@@ -9,7 +9,7 @@
     width: 93px
 }
 
-.list a:hover{
+.list a:hover, .repeat a:hover {
     color: #fe4e5b;
     text-decoration: none;
 }
@@ -27,13 +27,58 @@
     margin-right: 5px;
 }
 
-.repeat{
-    text-align: right;
+.repeat a{
+    padding-right: 8px;
+    padding-top: 6px;
+    font-size: 10px;
+    font-family: HelveticaNeue, HelveticaNeueCyr;
+    color: #938989;
+    float: right;
+    height: 22px;
 }
+
+.span4.repeat {
+    float: right
+}
+
+.icon.repeat {
+    background: url("../css/images/icns.png") repeat scroll -8px 0px transparent; 
+    width: 9px;
+    height: 8px;
+    margin-top: 5px;
+    float: left;
+    margin-right: 5px;
+}
+
+.icon.time {
+    background: url("../css/images/icns.png") repeat scroll -17px 0px transparent; 
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
+    float: left;
+    margin-right: 2px;
+}
+
+.repeat a:hover div{
+    background-position: -8px -8px
+}
+
 
 .news_blok {
     background-color: #EBE8E8;
-    padding: 14px;
+    padding: 8px;
+}
+
+.topwhite {
+    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.topwhite p {
+    font-size: 10px;
+    font-family: HelveticaNeue, HelveticaNeueCyr;
+    color: #929292;
 }
 
 .logo {
@@ -58,18 +103,49 @@
 }
 
 .span12 .news_blok .topwhite {
-    margin: 0 0 0 5%;
+    margin: 0 0 0 0;
     background-color: #ffffff;
 }
 
+.line {
+    border-bottom: 1px solid #f1f3f2;
+    margin: 0 7px;
+    height: 1px;
+}
+
+.topwhite h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: HelveticaNeue, HelveticaNeueCyr;
+    color: #fe4e5b;
+    padding-top: 4px;
+    height: 30px;
+}
+
+.text p {
+    font-size: 11px;
+    font-family: HelveticaNeue, HelveticaNeueCyr;
+    color: #252e33;
+    font-weight: 400
+}
+
 .news_blok img{
-    padding: 10px;
+    padding: 7px 9px 7px 7px;
+    float: left;
+    width: 74px;
+    height: 51px;
 }
 
 .text {
-    padding: 10px;
+    padding: 0px 7px;
 }
 
 .group_name{
     padding-left: 14px;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
 }

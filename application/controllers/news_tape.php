@@ -24,7 +24,7 @@
         function prepareData($eventsData){
             foreach ($eventsData->events->list as $value){
 
-                $value->min_text = $this->cutString($value->text, 100);
+                $value->min_text = $this->cutString($value->text, 180);
 
                 $eventsDataObj[] = $value;
             }
@@ -40,8 +40,8 @@
             $cutStr = mb_substr($string, 0, $len);
 
             return (mb_strlen($string) > $maxlen)
-                ? '"' . $cutStr . '..."'
-                : '"' . $cutStr . '"';
+                ? '' . $cutStr . '...'
+                : '' . $cutStr . '';
         }
     }
 
