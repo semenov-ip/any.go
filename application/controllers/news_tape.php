@@ -16,12 +16,33 @@
         function index(){
             $data['header'] = $this->header_arr;
 
-            $eventsData = file_get_contents('http://37.139.10.190:8080/anygo-ws/api/event/list');
-
-            $eventsData = json_decode($eventsData);
-
-            $data['eventsData'] = $eventsData->events->list;
+            $data['eventsData'] = $this->prepareData(json_decode(file_get_contents('http://37.139.10.190:8080/anygo-ws/api/event/list')));
 
             $this->load->view('news_tape_tpl', $data);
         }
+
+        function prepareData($eventsData){
+            foreach ($eventsData->events->list as $value){
+
+                $value->min_text = $this->cutString($value->text, 100);
+
+                $eventsDataObj[] = $value;
+            }
+
+            return $eventsDataObj;
+        }
+
+        function cutString($string, $maxlen) {
+            $len = (mb_strlen($string) > $maxlen)
+                ? mb_strripos(mb_substr($string, 0, $maxlen), ' ')
+                : $maxlen;
+
+            $cutStr = mb_substr($string, 0, $len);
+
+            return (mb_strlen($string) > $maxlen)
+                ? '"' . $cutStr . '..."'
+                : '"' . $cutStr . '"';
+        }
     }
+
+

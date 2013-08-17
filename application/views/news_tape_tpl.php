@@ -16,12 +16,12 @@
 
 				<div class="span12 topmenu">
 
-					<div class="span9 list"><i class="icon-th-list"></i> <a href="#">Список груп</a></div>
+					<div class="span8 list"> <a href="#"><div class="icon type"></div>Список груп</a></div>
 
-					<div class="span3 repeat"><i class="icon-repeat"></i> <a href="#">Обновить</a></div>
+					<div class="span4 repeat"><i class="icon-repeat"></i> <a href="#">Обновить</a></div>
 				
 				</div>
-				<?php //echo "<pre>"; print_r($eventsData); echo "</pre>"; ?>
+
 				<?php foreach ($eventsData as $val) { ?>
 					
 					<div class="span12 news_blok">
@@ -42,7 +42,7 @@
 							</div>
 
 							<div class="span12 text">
-								<p><?php echo !empty($val->text) ? $val->text : ""; ?></p>
+								<p><?php echo !empty($val->min_text) ? $val->min_text : ""; ?></p>
 							</div>
 
 						</div>

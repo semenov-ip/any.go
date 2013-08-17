@@ -1,5 +1,30 @@
-﻿.list .icon-th-list{
-    margin-left: 20px;
+﻿.list a{
+    padding-left: 8px;
+    padding-top: 6px;
+    font-size: 10px;
+    font-family: HelveticaNeue, HelveticaNeueCyr;
+    color: #938989;
+    float: left;
+    height: 22px;
+    width: 93px
+}
+
+.list a:hover{
+    color: #fe4e5b;
+    text-decoration: none;
+}
+
+.list a:hover div{
+    background-position: 0px -8px
+}
+
+.icon {
+    background: url("../css/images/icns.png") repeat scroll left top transparent; 
+    width: 8px;
+    height: 8px;
+    margin-top: 5px;
+    float: left;
+    margin-right: 5px;
 }
 
 .repeat{
@@ -13,6 +38,7 @@
 
 .logo {
     text-align: center;
+    height: 39px;
 }
 
 .logo img {
@@ -24,8 +50,11 @@
 }
 
 .topmenu {
-    background-color: #D6CFCF;
-    padding-top: 10px;
+    background-color: #d9dbda;
+    background-color: #d9dbda;
+    height: 24px;
+    border-top: 1px solid #f0424f;
+    border-bottom: 1px solid #f5f6f6;
 }
 
 .span12 .news_blok .topwhite {
