@@ -22,25 +22,33 @@
 				
 				</div>
 
-				<?php foreach ($eventsData as $val) { ?>
-					
-					<div class="span12 news_blok">
-					
-						<div class="span12 topwhite">
+				<?php foreach ($eventsData as $dateDayEvent=>$eventDataArr) { ?>
+				
+					<div class="span12">
+						<?php echo $dateDayEvent; ?>
+					</div>
 
-							<div class="span12">
-								<img src="<?php echo !empty($val->photo_url) ? $val->photo_url : "Казань"; ?>" />
-								<h3><?php echo !empty($val->group_name) ? $val->group_name : "Казань"; ?></h3>
-								<div class="icon time"></div><p><?php echo !empty($val->event_date) ? $val->event_date : ""; ?></p>
-								<div class="line"></div>
-							</div>
-							<div class="span12 text">
-								<p><?php echo !empty($val->min_text) ? $val->min_text : ""; ?></p>
+					<?php foreach ($eventDataArr['event_list'] as $val){ ?>
+					
+						<div class="span12 news_blok">
+						
+							<div class="span12 topwhite">
+
+								<div class="span12">
+									<img src="<?php echo !empty($val->photo_url) ? $val->photo_url : "Казань"; ?>" />
+									<h3><?php echo !empty($val->group_name) ? $val->group_name : "Казань"; ?></h3>
+									<div class="icon time"></div><p><?php echo !empty($val->event_date) ? $val->event_date : ""; ?></p>
+									<div class="line"></div>
+								</div>
+								<div class="span12 text">
+									<p><?php echo !empty($val->min_text) ? $val->min_text : ""; ?></p>
+								</div>
+
 							</div>
 
 						</div>
 
-					</div>
+					<?php } ?>
 					
 				<?php } ?>
 

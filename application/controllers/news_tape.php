@@ -16,17 +16,23 @@
         function index(){
             $data['header'] = $this->header_arr;
 
-            $data['eventsData'] = $this->prepareData(json_decode(file_get_contents('http://37.139.10.190:8080/anygo-ws/api/event/list')));
-
+            $data['eventsData'] = $this->prepareData(json_decode(file_get_contents('http://37.139.10.190:8080/anygo-ws/api/event/list?group=date')));
+            
             $this->load->view('news_tape_tpl', $data);
         }
 
         function prepareData($eventsData){
-            foreach ($eventsData->events->list as $value){
 
-                $value->min_text = $this->cutString($value->text, 180);
+            foreach ($eventsData->events->groups as $valAllDataEvent){
 
-                $eventsDataObj[] = $value;
+                foreach ($valAllDataEvent->event_list as $valDataEvent) {
+
+                    $valDataEvent->min_text = $this->cutString($valDataEvent->text, 180);
+
+                    $eventsDataObj[$valAllDataEvent->group_events_date]['event_list'][] = $valDataEvent;
+ 
+                }   
+                
             }
 
             return $eventsDataObj;
