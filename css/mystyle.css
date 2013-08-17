@@ -1,0 +1,46 @@
+﻿.list .icon-th-list{
+    margin-left: 20px;
+}
+
+.repeat{
+    text-align: right;
+}
+
+.news_blok {
+    background-color: #EBE8E8;
+    padding: 14px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    vertical-align: baseline;
+}
+
+.logocolor{
+    background-color: #fe4e5b;
+}
+
+.topmenu {
+    background-color: #D6CFCF;
+    padding-top: 10px;
+}
+
+.span12 .news_blok .topwhite {
+    margin: 0 0 0 5%;
+    background-color: #ffffff;
+}
+
+.news_blok img{
+    padding: 10px;
+}
+
+.text {
+    padding: 10px;
+}
+
+.group_name{
+    padding-left: 14px;
+}
