@@ -35,9 +35,10 @@
 						<div class="span12 news_blok">
 							<a href="/news?id=<?php echo $val->id ?>">
 								<div class="span12 topwhite">
-
 									<div class="span12">
-										<img class="" src="<?php echo !empty($val->photo_url) ? $val->photo_url : "Казань"; ?>" />
+										<div class="container">
+											<img class="" src="<?php echo !empty($val->photo_url) ? $val->photo_url : "/images/bg.jpg"; ?>" />
+										</div>
 										<h3><?php echo !empty($val->group_name) ? $val->group_name : "Казань"; ?></h3>
 										<div class="icon time"></div><p><?php echo !empty($val->event_date) ? $val->event_date : ""; ?></p>
 										<div class="line"></div>
@@ -65,6 +66,15 @@
 		//     var touch = event.touches[0];
 		//     console.log("Touch x:" + touch.pageX + ", y:" + touch.pageY);
 		// }, false);
+
+		$image = $('.container img');
+		width = $image.width();
+		height = $image.height();
+
+		$image.css({
+		    left: 0 - (width / 2),
+		    top: 0 - (height / 2)
+		});
 	</script>
 </body>
 </html>

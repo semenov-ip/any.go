@@ -135,13 +135,6 @@
     margin: 4px 0px 4px 0px;
 }
 
-.news_blok img{
-    padding: 7px 9px 7px 7px;
-    float: left;
-    width: 74px;
-    height: 51px;
-}
-
 .text {
     padding: 0px 7px;
 }
@@ -302,4 +295,22 @@ a:hover .source {
     background-position: 0px -64px;
     width: 19px;
     height: 11px;
+}
+
+.container     { 
+    position: relative; 
+    overflow: hidden; 
+    width: 74px;
+    height: 51px;
+    margin: 7px 9px 7px 7px;
+    float: left;
+    /*background: url("../images/bg.png") repeat scroll 0px 0px transparent; */
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+.container img { 
+    position: absolute; 
 }

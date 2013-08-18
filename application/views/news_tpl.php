@@ -17,7 +17,7 @@
                      <div class="span12 topwhite">
                          <div class="span12">
                             <div style="margin:7px">
-                                <img class="largeimage" src="<?php echo !empty($eventData->event->photo_url_big) ? $eventData->event->photo_url_big : "Казань"       ; ?>">
+                                <img class="largeimage" src="<?php echo !empty($eventData->event->photo_url_big) ? $eventData->event->photo_url_big : "/images/bg.jpg"; ?>">
                             </div>
                             <div style="clear:both"></div>
                             <div style="margin:-7px 7px">
