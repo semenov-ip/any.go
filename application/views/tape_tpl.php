@@ -33,12 +33,11 @@
 					<?php foreach ($eventDataArr['event_list'] as $val){ ?>
 					
 						<div class="span12 news_blok">
-							<a href="/news?id=<?php echo $val->id ?>">
-							<!-- <a href="/news?id=<?php ?>"> -->
+							<a href="/news<?php echo $pageId ?>">
 								<div class="span12 topwhite">
 
 									<div class="span12">
-										<img class="" src="<?php echo !empty($val->photo_url) ? $val->photo_url : "Казань"; ?>" />
+										<img src="<?php echo !empty($val->photo_url) ? $val->photo_url : "Казань"; ?>" />
 										<h3><?php echo !empty($val->group_name) ? $val->group_name : "Казань"; ?></h3>
 										<div class="icon time"></div><p><?php echo !empty($val->event_date) ? $val->event_date : ""; ?></p>
 										<div class="line"></div>
@@ -49,6 +48,7 @@
 									<div style="clear: both"></div>
 								</div>
 							</a>
+
 						</div>
 
 					<?php } ?>
@@ -61,11 +61,11 @@
 
 	</div>
 	<script>
-		// document.addEventListener('touchmove', function(event) {
-		//     event.preventDefault();
-		//     var touch = event.touches[0];
-		//     console.log("Touch x:" + touch.pageX + ", y:" + touch.pageY);
-		// }, false);
+		document.addEventListener('touchmove', function(event) {
+		    event.preventDefault();
+		    var touch = event.touches[0];
+		    console.log("Touch x:" + touch.pageX + ", y:" + touch.pageY);
+		}, false);
 	</script>
 </body>
 </html>

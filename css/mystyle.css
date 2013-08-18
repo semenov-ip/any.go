@@ -65,8 +65,8 @@
 
 
 .news_blok {
-    background-color: #EBE8E8;
-    padding: 8px;
+    background-color: #f1f3f2;
+    padding: 7px 8px;
 }
 
 .topwhite {
@@ -92,6 +92,8 @@
 
 .logocolor{
     background-color: #fe4e5b;
+    position: fixed;
+    z-index: 2;
 }
 
 .topmenu {
@@ -103,8 +105,10 @@
 }
 
 .span12 .news_blok .topwhite {
-    margin: 0 0 0 0;
+    margin: 0 auto;
     background-color: #ffffff;
+    max-width: 600px;
+    float: none;
 }
 
 .line {
@@ -125,8 +129,10 @@
 .text p {
     font-size: 11px;
     font-family: HelveticaNeue, HelveticaNeueCyr;
-    color: #252e33;
-    font-weight: 400
+    color: #525c62;
+    font-weight: 400;
+    line-height: 13px;
+    margin: 4px 0px 4px 0px;
 }
 
 .news_blok img{
@@ -144,8 +150,156 @@
     padding-left: 14px;
 }
 
+.sepdate {
+    background-color: #f1f3f2;  
+    padding-top: 4px;
+    margin: 0 auto -6px;
+}
+
+.sepdate:first-child {
+    display: none;
+}
+
+.sepdate p{
+    text-align: center;
+    font-size: 12px;
+    font-family: HelveticaNeue, HelveticaNeueCyr;
+    color: #949b9f;
+    margin: 0 auto;
+    width: 80px;
+    height: 17px;
+    background-color: #f1f3f2;
+    position: relative;
+    margin-bottom: -9px;
+}
+
+.sepdateline {
+    background-color: #e1e3e2;
+    height: 2px;
+    max-width: 600px;
+    margin: 0 auto
+}
+
+img.largeimage {
+    width: 100%;
+    height: 100%;
+    padding: 0px
+}
+
 @media 
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
     /* Retina-specific stuff here */
+}
+
+
+
+/*------------------------------------------------*/
+
+
+.event_form {
+    margin: 0 auto;
+}
+
+.event_form, .event_form div {
+    max-width: 600px;
+}
+
+.buttons {
+    padding: 0 14px 0 14px;
+}
+
+.button-like, .button-igo, .button-source {
+    height: 27px;
+    float: left;
+    background-color: #fff;
+    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.like{
+    background: url("../css/images/icns.png") repeat scroll -17px -16px transparent; 
+    width: 14px;
+    height: 12px;
+    margin: 9px 7px;
+    float: left;
+}
+
+p.likecoun {
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: HelveticaNeue, HelveticaNeueCyr;
+    color: #646a6e;
+    margin: 5px 7px 0px -4px;
+}
+
+
+a:hover .like {
+    background-position: -17px -28px;
+    width: 14px;
+    height: 12px;
+}
+
+.button-igo{
+    margin-left: 7px;
+}
+
+.button-igo p{
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: HelveticaNeue, HelveticaNeueCyr;
+    color: #646a6e;
+    margin: 5px 7px 0px -4px;
+}
+
+.igo{
+    background: url("../css/images/icns.png") repeat scroll 0px -42px transparent; 
+    width: 14px;
+    height: 11px;
+    margin: 9px 7px;
+    float: left;
+}
+
+a:hover .igo {
+    background-position: -17px -42px;
+    width: 14px;
+    height: 12px;
+}
+
+a:hover p {
+    color: #fe4e5b
+}
+
+
+.button-source{
+    float: right;
+}
+
+.button-source p{
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: HelveticaNeue, HelveticaNeueCyr;
+    color: #646a6e;
+    margin: 5px 7px 0px -4px;
+}
+
+.source{
+    background: url("../css/images/icns.png") repeat scroll 0px -53px transparent; 
+    width: 19px;
+    height: 11px;
+    margin: 9px 7px;
+    float: left;
+}
+
+a:hover .source {
+    background-position: 0px -64px;
+    width: 19px;
+    height: 11px;
 }
