@@ -10,7 +10,7 @@
 
 				<div class="span12 logocolor">
 
-					<div class="logo"><img src="/images/logo.png"></div>
+					<div class="logo"><a href="/news_tape/"><img src="/images/logo.png"></a></div>
 				
 				</div>
 
@@ -33,7 +33,7 @@
 					<?php foreach ($eventDataArr['event_list'] as $val){ ?>
 					
 						<div class="span12 news_blok">
-							<a href="/news?id=<?php echo $val->id ?>">
+							<a class="hovernone" href="/news?id=<?php echo $val->id ?>">
 								<div class="span12 topwhite">
 									<div class="span12">
 										<div class="container">
@@ -71,10 +71,10 @@
 		width = $image.width();
 		height = $image.height();
 
-		$image.css({
-		    left: 0 - (width / 2),
-		    top: 0 - (height / 2)
-		});
+		// $image.css({
+		//     left: 0 - (width / 2),
+		//     top: 0 - (height / 2)
+		// });
 	</script>
 </body>
 </html>

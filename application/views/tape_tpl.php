@@ -10,7 +10,7 @@
 
 				<div class="span12 logocolor">
 
-					<div class="logo"><img src="/images/logo.png"></div>
+					<div class="logo"><a href="/news_tape/"><img src="/images/logo.png"></a></div>
 				
 				</div>
 

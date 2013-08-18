@@ -6,7 +6,7 @@
         <div class="row-fluid">         
             <div class="span12">
                 <div class="span12 logocolor">
-                    <div class="logo"><img src="/images/logo.png"></div>
+                    <div class="logo"><a href="/news_tape/"><img src="/images/logo.png"></a></div>
                 </div>
                 <div class="span12 topmenu">
                     <div class="span8 list"> <a href="#"><div class="icon type"></div>Список груп</a></div>
