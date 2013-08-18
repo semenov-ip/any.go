@@ -27,7 +27,7 @@
                             <div class="line"></div>
                         </div>
                         <div class="span12 text">
-                            <p><?php echo $eventData->event->text ?></p>
+                            <p id="searchUrl"><?php echo $eventData->event->text ?></p>
                         </div>
                         <div style="clear: both"></div>
                      </div>

@@ -16,7 +16,7 @@
         function index(){
             $data['header'] = $this->header_arr;
 
-            $data['eventData'] = json_decode(file_get_contents('http://37.139.10.190:8080/anygo-ws/api/event/get?id=' . $_REQUEST['id']));
+            $data['eventData'] = json_decode(file_get_contents('http://37.139.10.190:8080/anygo-ws/api/event/get?v=2&id=' . $_REQUEST['id']));
            
             $this->load->view('news_tpl', $data);
         }

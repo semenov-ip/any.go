@@ -34,7 +34,6 @@
 					
 						<div class="span12 news_blok">
 							<a href="/news?id=<?php echo $val->id ?>">
-							<!-- <a href="/news?id=<?php ?>"> -->
 								<div class="span12 topwhite">
 
 									<div class="span12">
